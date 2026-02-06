@@ -236,7 +236,8 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     info.changeScoreBy(1)
-    mySprite3.setPosition(randint(10, 150), randint(10, 150))
+    mySprite.startEffect(effects.starField)
+    mySprite3.setPosition(randint(20, 140), randint(20, 140))
 })
 let mySprite3: Sprite = null
 let mySprite2: Sprite = null
