@@ -235,9 +235,10 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     game.reset()
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
-    info.changeLifeBy(-1)
-    mySprite.setPosition(randint(10, 150), randint(10, 150))
+    info.changeScoreBy(1)
+    mySprite3.setPosition(randint(10, 150), randint(10, 150))
 })
+let mySprite3: Sprite = null
 let mySprite2: Sprite = null
 let mySprite: Sprite = null
 scene.setBackgroundImage(img`
@@ -408,7 +409,7 @@ mySprite2 = sprites.create(img`
     ........................
     ........................
     `, SpriteKind.Enemy)
-let mySprite3 = sprites.create(img`
+mySprite3 = sprites.create(img`
     . . . . . . . 6 . . . . . . . . 
     . . . . . . 8 6 6 . . . 6 8 . . 
     . . . e e e 8 8 6 6 . 6 7 8 . . 
