@@ -1,5 +1,5 @@
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
-    info.changeLifeBy(-1)
+    info.changeScoreBy(1)
     mySprite.setPosition(randint(10, 150), randint(10, 150))
 })
 let mySprite: Sprite = null
