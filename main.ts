@@ -275,7 +275,7 @@ info.onLifeZero(function () {
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     info.changeScoreBy(1)
     mySprite.startEffect(effects.starField)
-    mySprite3.setPosition(randint(20, 140), randint(20, 140))
+    mySprite3.setPosition(randint(30, 110), randint(30, 110))
 })
 function startLevel (num: number) {
     info.setLife(3)
