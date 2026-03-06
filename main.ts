@@ -1,6 +1,6 @@
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     info.changeScoreBy(1)
-    mySprite3.setPosition(randint(20, 140), randint(20, 140))
+    mySprite3.setPosition(randint(30, 110), randint(30, 110))
 })
 let mySprite3: Sprite = null
 scene.setBackgroundImage(img`
